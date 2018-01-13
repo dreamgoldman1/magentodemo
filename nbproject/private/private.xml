@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/var/www/magento19/app/code/local/Goldman/WebService/etc/config.xml</file>
+            <file>file:/var/www/magento19/app/code/local/Goldman/WebService/Block/Catalog/Product/View/Block.php</file>
+            <file>file:/var/www/magento19/app/code/local/Goldman/BrandExample/Block/Catalog/Product/View/Link.php</file>
+            <file>file:/var/www/magento19/app/design/frontend/base/default/template/goldman_webservice/catalog/product/view/block.phtml</file>
+            <file>file:/var/www/magento19/app/code/local/Goldman/BrandExample/etc/config.xml</file>
+            <file>file:/var/www/magento19/app/design/frontend/base/default/template/goldman_brandexample/catalog/product/view/link.phtml</file>
+            <file>file:/var/www/magento19/app/etc/modules/Goldman_WebService.xml</file>
+            <file>file:/var/www/magento19/app/design/frontend/base/default/layout/goldman_webservice.xml</file>
+            <file>file:/var/www/magento19/app/design/frontend/base/default/layout/goldman_brandexample.xml</file>
+        </group>
+    </open-files>
+</project-private>

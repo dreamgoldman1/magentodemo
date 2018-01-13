@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<layout>
+
+    <catalog_product_view>
+        <reference name="product.info">
+            <block type="goldman_webservice/catalog_product_view_block" name="catalog.product.view.other.block" as="other" template="goldman_webservice/catalog/product/view/block.phtml" />
+        </reference>
+    </catalog_product_view>
+
+</layout>

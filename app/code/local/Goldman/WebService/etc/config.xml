@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Goldman_WebService>
+            <version>0.1.0</version>
+        </Goldman_WebService>
+    </modules>
+    <global>
+        <blocks>
+            <goldman_webservice>
+                <class>Goldman_WebService_Block</class>
+            </goldman_webservice>
+        </blocks>
+    </global>
+    <frontend>
+        <layout>
+            <updates>
+                <goldman_webservice>
+                    <file>goldman_webservice.xml</file>
+                </goldman_webservice>
+            </updates>
+        </layout>
+        <routers>
+            <webservice>
+                <use>standard</use>
+                <args>
+                    <module>Goldman_WebService</module>
+                    <frontName>webservice</frontName>
+                </args>
+            </webservice>
+        </routers>
+    </frontend>
+</config>

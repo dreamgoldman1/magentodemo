@@ -1,0 +1,9 @@
+<?php $countries = $this->getCountries(); ?>
+<h3>Países</h3>
+<select name='paises' class='validate-select'>
+<?php
+    foreach ($countries as $country){
+        echo '<option value="' . $country->name . '">' . $country->name . '</option>';
+    }
+?>
+</select>

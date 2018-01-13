@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<layout>
+    
+    <goldman_brandexample_index_index>
+        <reference name="content">
+            <block type="goldman_brandexample/list" name="goldman.brandexample.list" template="goldman_brandexample/list.phtml" />
+        </reference>
+    </goldman_brandexample_index_index>
+    
+    <goldman_brandexample_index_view>
+        <reference name="content">
+            <block type="goldman_brandexample/view" name="goldman.brandexample.view" template="goldman_brandexample/view.phtml" />
+        </reference>
+    </goldman_brandexample_index_view>
+    
+    <catalog_product_view>
+        <reference name="product.info">
+            <block type="goldman_brandexample/catalog_product_view_link" name="catalog.product.view.other.link" as="other" template="goldman_brandexample/catalog/product/view/link.phtml"/>
+        </reference>
+    </catalog_product_view>
+    
+</layout>

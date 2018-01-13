@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Goldman_WebService>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Goldman_WebService>
+    </modules>
+</config>
