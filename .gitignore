@@ -1,0 +1,5 @@
+/var/cache/*
+.htaccess
+/app/etc/local.xml
+/nbproject
+/nbproject/*
