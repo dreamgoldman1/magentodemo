@@ -1,5 +1,9 @@
+/var/cache
 /var/cache/*
+/var/session
+/var/session/*
 .htaccess
 /app/etc/local.xml
 /nbproject
 /nbproject/*
+
