@@ -47,7 +47,7 @@
                         <?php echo $this->getPriceHtml($_product, true, '-widget-new-grid') ?>
                         
                         <?php $product = Mage::getModel('catalog/product')->load($_product->getId()); ?>
-                        <div class="short-description-home"><?php echo substr($product->getDescription(), 0, 50); ?></div>
+                        <div class="short-description-home"><?php echo substr($product->getDescription(), 0, 100); ?></div>
                         
                         <?php echo $this->getReviewsSummaryHtml($_product, 'short') ?>
                         <div class="actions">
