@@ -10664,3 +10664,8 @@ div.calendar table td.button {
 .footer .links a {
     color: white;
 }
+
+.account-cart-wrapper a, .header-minicart a{
+    background-color: transparent;
+}
+
