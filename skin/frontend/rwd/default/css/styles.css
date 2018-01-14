@@ -10669,3 +10669,9 @@ div.calendar table td.button {
     background-color: transparent;
 }
 
+.short-description-home{
+    text-transform: capitalize;
+    font-size: 11px;
+    text-align: justify;
+}
+
