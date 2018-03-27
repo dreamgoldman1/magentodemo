@@ -1,0 +1,67 @@
+<?xml version="1.0"?> 
+<config>
+    <menu>
+            <vesextensions module="ves_socialsidebar">
+                <title>VenusTheme</title>
+                <sort_order>51</sort_order>
+                <children>
+                    <socialsidebar translate="title" module="ves_socialsidebar">
+                        <title>Ves Social Sidebar</title>
+                        <children>
+                             
+                            <configuration translate="title" module="ves_socialsidebar">
+                                <title>Configuration</title>
+                                <sort_order>2</sort_order>
+                                <action>adminhtml/system_config/edit/section/ves_socialsidebar</action>
+                            </configuration>
+                        </children>
+                    </socialsidebar>
+                </children>
+            </vesextensions>
+        </menu>
+		<acl>
+            <resources>
+                <admin>
+                    <children>
+                        <vesextensions module="ves_socialsidebar">
+                            <title>VenusTheme</title>
+                            <sort_order>51</sort_order>
+                            <children>
+                                <socialsidebar translate="title" module="ves_socialsidebar">
+                                    <title>Ves Social Sidebar</title>
+                                    <children>
+                                         
+                                        <configuration translate="title" module="ves_socialsidebar">
+                                            <title>Configuration</title>
+                                            <sort_order>2</sort_order>
+                                            <action>adminhtml/system_config/edit/section/ves_socialsidebar</action>
+                                        </configuration>
+                                    </children>
+                                </socialsidebar>
+                            </children>
+                        </vesextensions>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <ves_socialsidebar>
+                                            <title>Ves Social Sidebar</title>
+                                        </ves_socialsidebar>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+        <translate>
+			<modules>
+				<Ves_Socialsidebar>
+					<files>
+						<default>Ves_Socialsidebar.csv</default>
+					</files>
+				</Ves_Socialsidebar>
+			</modules>
+		</translate>
+</config>

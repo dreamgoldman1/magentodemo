@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<widgets>
+    <vesslider type="ves_layerslider/widget_slider"  translate="label description" module="ves_layerslider" >
+        <name>Ves Layer Slider : Generate Slider </name>
+        <description type="desc">Generate A Layer Slider</description>
+        <parameters>
+			<show translate="label" module="core">
+				<label>Enabled</label>
+				<sort_order>10</sort_order>
+				<type>select</type>
+				<source_model>adminhtml/system_config_source_yesno</source_model>
+				<visible>1</visible>
+				<required>0</required>
+				<value>1</value>
+			</show>
+			<bannerId translate="label" module="core">
+				<label>Banner Id</label>
+				<sort_order>20</sort_order>
+				<type>select</type>
+                <source_model>ves_layerslider/system_config_source_listBanner</source_model>
+				<comment>Choose Banner for your slideshow</comment>
+                <visible>1</visible>
+				<required>1</required>
+				<value></value>
+			</bannerId>
+        </parameters>
+    </vesslider>   
+</widgets>

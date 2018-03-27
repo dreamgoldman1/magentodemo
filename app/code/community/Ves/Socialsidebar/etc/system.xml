@@ -1,0 +1,351 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <ves translate="label" module="ves_socialsidebar">
+            <label>Venus Theme</label>
+            <sort_order>211</sort_order>
+        </ves>
+    </tabs>
+	<sections>
+        <ves_socialsidebar>
+            <label>Ves Social Sidebar</label>
+            <tab>ves</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>10</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+				<ves_socialsidebar translate="label">
+                    <label>General Setting</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1000</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>     
+						<last_update translate="label">
+							<label>Current Update Time</label>
+							<frontend_type>label</frontend_type>
+							<frontend_model>ves_socialsidebar/system_config_form_field_notification</frontend_model>
+							<sort_order>3</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</last_update> 
+						<show translate="label" module="core">
+							<label>Enabled</label>
+							<sort_order>10</sort_order>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</show> 
+						<theme translate="label">
+                            <label>Theme</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>ves_socialsidebar/system_config_source_listTheme</source_model>
+                            <sort_order>35</sort_order>
+							<comment>Choose Theme for your module</comment>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </theme>
+
+						<maxWidth translate="label">
+                            <label>Responsive Max Width</label>
+                            <frontend_type>text</frontend_type> 
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </maxWidth>
+						<minWidth translate="label">
+                            <label>Responsive Min Width</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>45</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </minWidth>
+						<domain translate="label">
+                            <label>Domain</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </domain>
+						
+						<addID>
+							<label>ID Add This</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>55</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+						</addID> 
+
+                        <information translate="label">
+                            <label>Note: </label>
+                            <frontend_type>label</frontend_type>
+                            <frontend_model>ves_socialsidebar/system_config_form_field_information</frontend_model>
+                            <sort_order>64</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </information>  
+					</fields>
+				</ves_socialsidebar>
+				<!-- Catagory -->
+				<mobile_config>
+					<label>Mobile Config</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1999</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+						<mobileTheme translate="label">
+                            <label>Mobile Theme </label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>ves_socialsidebar/system_config_source_listTheme</source_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </mobileTheme> 
+						
+						<mobileStatus translate="label" module="core">
+                            <label>Mobile Status</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>              
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </mobileStatus>
+
+					</fields>
+				</mobile_config>
+				 
+				<share_setting>
+					<label>Share Settings</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>5999</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields> 
+                        <sharePosition translate="label">
+                            <label>Position Share </label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>ves_socialsidebar/system_config_source_listPosition</source_model>
+                            <sort_order>29</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </sharePosition>
+						<share_service>
+							<label>Selected Services</label>
+                            <frontend_type>multiselect</frontend_type>
+                            <source_model>ves_socialsidebar/system_config_source_listService</source_model>
+                            <sort_order>31</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+						</share_service>
+						<share_title >
+							<label>Thank You Title </label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>41</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+						</share_title>
+						<share_mgs >
+							<label>Follow Message </label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>42</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+						</share_mgs>
+						<themeShare>
+							<label>Theme</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>ves_socialsidebar/system_config_source_listTheme</source_model>
+                            <sort_order>43</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+						</themeShare>
+						<showDesktop translate="label" module="core">
+							<label>Show Desktop</label>
+                            <frontend_type>select</frontend_type>
+                             <source_model>adminhtml/system_config_source_yesno</source_model> 
+                            <sort_order>44</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+						</showDesktop>
+					   <showMobile translate="label" module="core">
+                            <label>Show Mobile</label>
+                            <frontend_type>select</frontend_type>
+                             <source_model>adminhtml/system_config_source_yesno</source_model> 
+                            <sort_order>100</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </showMobile>
+					</fields> 
+				</share_setting> 
+				<!-- Information -->
+				<follow>
+					<label>Follow Settings</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>6001</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields> 
+						<titleFollow translate="label">
+							<label>Title Follow</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>40</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</titleFollow>   
+                        <themeFollow>
+                            <label>Theme</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>ves_socialsidebar/system_config_source_listTheme</source_model>
+                            <sort_order>41</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </themeFollow>
+                        <thankTitle_follow >
+                            <label>Thank You Title </label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>42S</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </thankTitle_follow>
+                        <showDesktop_follow translate="label" module="core">
+                            <label>Show Desktop</label>
+                            <frontend_type>select</frontend_type>
+                             <source_model>adminhtml/system_config_source_yesno</source_model> 
+                            <sort_order>46</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </showDesktop_follow>
+                       <showMobile_follow translate="label" module="core">
+                            <label>Show Mobile</label>
+                            <frontend_type>select</frontend_type>
+                             <source_model>adminhtml/system_config_source_yesno</source_model> 
+                            <sort_order>47</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </showMobile_follow>
+                        <followServices  translate="label">
+                            <label>Follow Services </label>
+                            <frontend_type>label</frontend_type>
+                            <comment>Please go to the page service, create a account and then get data-ID to input in this param.</comment>
+                            <sort_order>48</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </followServices>
+                        <Facebook >
+                            <label>Facebook </label>
+                            <frontend_type>text</frontend_type>
+                            <comment>facebook.com/</comment>
+                            <sort_order>49</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </Facebook>
+                        <Twitter >
+                            <label>Twitter </label>
+                            <frontend_type>text</frontend_type>
+                            <comment>twitter.com/</comment>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </Twitter>
+                        <GoogleFollow >
+                            <label>Google follow </label>
+                            <frontend_type>text</frontend_type>
+                            <comment>plus.google.com/</comment>
+                            <sort_order>51</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </GoogleFollow>
+                        <Youtube >
+                            <label>Youtube</label>
+                            <frontend_type>text</frontend_type>
+                            <comment>youtube.com/user/</comment>
+                            <sort_order>52</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </Youtube>
+                        <Flickr>
+                            <label>Flickr</label>
+                            <frontend_type>text</frontend_type>
+                            <comment>flickr.com/photos/</comment>
+                            <sort_order>53</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </Flickr> 
+                        <Vimeo>
+                            <label>Vimeo</label>
+                            <frontend_type>text</frontend_type>
+                            <comment>vimeo.com/  </comment>
+                            <sort_order>55</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </Vimeo>  
+                         <Pinterest>
+                            <label>Pinterest</label>
+                            <frontend_type>text</frontend_type>
+                            <comment>pinterest.com/  </comment>
+                            <sort_order>56</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </Pinterest> 
+                        <Instagram>
+                            <label>Instagram</label>
+                            <frontend_type>text</frontend_type>
+                            <comment>instagram.com/</comment>
+                            <sort_order>57</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </Instagram> 
+                         <LinkedIn>
+                            <label>LinkedIn</label>
+                            <frontend_type>text</frontend_type>
+                            <comment>linkedin.com/in/</comment>
+                            <sort_order>58</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </LinkedIn>                                      
+					</fields>
+				</follow>	 
+            </groups>
+        </ves_socialsidebar>
+    </sections>    
+</config>

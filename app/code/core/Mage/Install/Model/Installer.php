@@ -20,7 +20,7 @@
  *
  * @category    Mage
  * @package     Mage_Install
- * @copyright  Copyright (c) 2006-2017 X.commerce, Inc. and affiliates (http://www.magento.com)
+ * @copyright  Copyright (c) 2006-2015 X.commerce, Inc. (http://www.magento.com)
  * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 
@@ -144,7 +144,9 @@ class Mage_Install_Model_Installer extends Varien_Object
         $data['db_active'] = true;
 
         $data = Mage::getSingleton('install/installer_db')->checkDbConnectionData($data);
-
+        //added by Venus template to install sample data
+        Mage::getSingleton('install/installer_quickstart')->installSampleDB($data);
+        //end added by venus template
         Mage::getSingleton('install/installer_config')
             ->setConfigData($data)
             ->install();
@@ -180,9 +182,12 @@ class Mage_Install_Model_Installer extends Varien_Object
         $unsecureBaseUrl = Mage::getBaseUrl('web');
         if (!empty($data['unsecure_base_url'])) {
             $unsecureBaseUrl = $data['unsecure_base_url'];
-            $setupModel->setConfigData(Mage_Core_Model_Store::XML_PATH_UNSECURE_BASE_URL, $unsecureBaseUrl);
+            
+        } else {
+            $data['unsecure_base_url'] = $unsecureBaseUrl;
         }
-
+        
+        $setupModel->setConfigData(Mage_Core_Model_Store::XML_PATH_UNSECURE_BASE_URL, $unsecureBaseUrl);
         if (!empty($data['use_secure'])) {
             $setupModel->setConfigData(Mage_Core_Model_Store::XML_PATH_SECURE_IN_FRONTEND, 1);
             $setupModel->setConfigData(Mage_Core_Model_Store::XML_PATH_SECURE_BASE_URL, $data['secure_base_url']);

@@ -1,0 +1,65 @@
+<?php
+	/*Start copy at here*/
+	/*framework: get current theme setting*/
+	$list_image_width = (int)$this->getConfig("image_width", 300);
+	$list_image_height = (int)$this->getConfig("image_height", 300);
+
+	$swap_image_number = (int)$this->getConfig("swap_image_number", 0);
+
+	$popup_quickview_width = $this->getConfig("popup_quickview_width", "60%");
+	$popup_quickview_height = $this->getConfig("popup_quickview_height", "80%");
+
+	$enable_pzoom = $this->getConfig("show_pzoom");
+	$enable_new_icon = $this->getConfig("enable_new_icon");
+	$enable_sale_icon = $this->getConfig("enable_sale_icon");
+	$show_title = $this->getConfig('show_title');
+	$enable_short_desc = $this->getConfig('show_desc');
+	$show_review = $this->getConfig('review');
+	$show_price = $this->getConfig('show_price');
+	$show_addcart = $this->getConfig("show_addcart");
+	$show_compare_wishlist = $this->getConfig("enable_wc") ;
+	/*end get setting*/
+
+	/*quickview was enabled?*/
+	$quickview = isset($config['enable_quickview']) ? $config['enable_quickview'] : 0;
+	/*Swap images was enabled?*/
+	$swap_image = isset($config['enable_swap']) ? $config['enable_swap'] : 0;
+
+	$moduleId = rand().time();
+	$itemsperpage = (int)$this->getConfig("itemspage",4);
+	$auto_play_mode = (int)$this->getConfig("auto_play");
+
+	$title_maxchar = (int)$this->getConfig("desc_maxchar");
+	$title_maxchar = $title_maxchar > 0 ?$title_maxchar: 100;
+	$desc_maxchar = (int)$this->getConfig("desc_maxchar");
+	$desc_maxchar = $desc_maxchar > 0 ?$desc_maxchar: 100;
+	$interval = (int)$this->getConfig("interval");
+
+	$auto_play = $auto_play_mode?"true":"false";
+	$cols = (int)$this->getConfig("itemsrow",4);
+	$cols = !empty($cols)?$cols:1;
+	$span = floor(12/$cols);
+	$active = 'news';
+
+	/*end copy at here*/
+	$current = 0;
+	$modid = rand(1,9)+rand();
+	$is_related = false;
+
+	$price_prefix = "_clone_tabshome_".$modid;
+?>
+<?php $_helper = $this->helper('catalog/output'); ?>
+<?php if($products) { ?>
+<?php 
+
+	$pages = array_chunk( $products, $itemsperpage);
+?>	
+  <?php foreach ($pages as  $k => $_productCollection ) {  ?>
+  		<div class="item <?php if($k==0) {?>first<?php } elseif($k == (count($pages) -1 )) {?>last<?php } ?> <?php if($k==0) {?>active<?php } ?> product-grid no-margin">
+		<?php if($product_module_path = Mage::helper("ves_tempcp/framework")->getLayoutPath("product_module.phtml")) { ?>
+	   	 	<?php require ($product_module_path); ?>
+
+	    <?php } ?>
+		</div>
+<?php } ?>
+<?php } ?>
